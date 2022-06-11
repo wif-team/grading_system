@@ -13,9 +13,14 @@ Cada estudiante tendrá las siguientes calificaciones (similar al sistema actual
 - El docente va a poder ingresar toda la información de n estudiantes que tenga por curso y al final va a poder ver una tabla con el resumen de todo el sistema de calificaciones
 
 Tabla 1:
+
 5% | Nota 1
+
 35% | Nota 2
+
 30% | Nota 3
+
 15% | Nota 4
+
 15% | Nota 5
 
