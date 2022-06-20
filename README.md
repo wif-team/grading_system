@@ -25,5 +25,3 @@ Tabla 1:
 15% | Nota 5
 
 # Cambio de prueba
-
-Otro cambio de prueba
