@@ -3,9 +3,10 @@ package Login;
 import javax.swing.JOptionPane;
 
 public class Name {
+
   private String username;
 
-  void showName() {
+  public void showName() {
     String regexUsername = "^[A-Z]{1}[a-z]{1,}[\\-\\s][A-Z]{1}[a-z]{1,}$";
     String regexValidName = "^[A-Za-z\\s]{2,}$";
     boolean isValidName = false;
@@ -23,6 +24,6 @@ public class Name {
             "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n Nombre Apellido");
       }
     } while (!isValidName);
-
   }
+
 }
