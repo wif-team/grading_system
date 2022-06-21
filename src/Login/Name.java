@@ -11,5 +11,6 @@ public class Name {
       username = JOptionPane.showInputDialog("Ingresa tu Nombre y Apellido");
 
     } while (!isUsernameValid);
+    // xfa no hagas que se quede en bucle para la proxima :)
   }
 }
