@@ -19,6 +19,11 @@ public class Password {
       user_password = JOptionPane.showInputDialog(null, "Ingrese su contrasena");
       validez = valpassword(user_password);
 
+      if (user_password.isEmpty()) {
+        JOptionPane.showMessageDialog(null, "Debes ingresar caracteres");
+        continue;
+      }
+
       if (validez == false && user_password.contains(" ")) {
         JOptionPane.showMessageDialog(null, "La contraseña no debe contener espacios y tener 10 caracteres");
 
