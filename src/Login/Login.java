@@ -7,7 +7,7 @@ public class Login {
     Identification identification = new Identification();
     identification.showIdentification();
     Faculty faculty = new Faculty();
-    faculty.showFaculty();
+    faculty.VerifyFaculty();
     Email email = new Email();
     email.showEmail();
     Password password = new Password();
