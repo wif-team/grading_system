@@ -43,7 +43,6 @@ public class Password {
 
     } while (validez == false);
 
-    JOptionPane.showMessageDialog(null, validez);
     JOptionPane.showMessageDialog(null, "Contraseña válida");
 
   }

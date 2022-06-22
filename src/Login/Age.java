@@ -3,9 +3,9 @@ package Login;
 import javax.swing.JOptionPane;
 
 public class Age {
+  private String ageValidar;
 
-  void showAge() {
-    String ageValidar;
+  public void getDocentAge() {
     do { // ciclo para repetir en caso de no ser valido
       ageValidar = JOptionPane.showInputDialog(null, "Ingrese su edad (25-60)");
       if (ageValidar.isEmpty()) {
@@ -40,4 +40,8 @@ public class Age {
     return respuesta;
   }
 
+  // metodo para retornar la edad a login
+  public String getAge() {
+    return ageValidar;
+  }
 }
