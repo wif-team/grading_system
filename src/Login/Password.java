@@ -3,6 +3,7 @@ package Login;
 import javax.swing.JOptionPane;
 
 public class Password {
+
   private String user_password;
 
   public String getPassword() {
@@ -19,6 +20,9 @@ public class Password {
       user_password = JOptionPane.showInputDialog(null, "Ingrese su contrasena");
       validez = valpassword(user_password);
 
+      if (validez == false && user_password.contains(" ")) {
+        JOptionPane.showMessageDialog(null, "La contraseña no debe contener espacios y tener 10 o mas caracteres");
+      }
       if (user_password.isEmpty()) {
         JOptionPane.showMessageDialog(null, "Debes ingresar caracteres");
         continue;
@@ -39,6 +43,7 @@ public class Password {
 
     } while (validez == false);
 
+    JOptionPane.showMessageDialog(null, validez);
     JOptionPane.showMessageDialog(null, "Contraseña válida");
 
   }
