@@ -24,6 +24,7 @@ public class Name {
             "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n Nombre Apellido");
       }
     } while (!isValidName);
+
   }
 
 }
