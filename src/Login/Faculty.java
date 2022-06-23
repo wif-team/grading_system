@@ -5,11 +5,6 @@ import javax.swing.JOptionPane;
 public class Faculty {
     private String faculty;
 
-    public static void main(String[] args) {
-        Faculty nombre = new Faculty();
-        nombre.VerifyFaculty();
-    }
-
     public String getFaculty() {
         return faculty;
     }
@@ -18,8 +13,6 @@ public class Faculty {
         String faculty;
         boolean valid; // Boolean que permitira la salida del ciclo do while
         boolean tiene_numeros; // Boolean para ver mas adelante si la palabra introducida tiene numeros
-        boolean repetir = true; // Boolean para ver si se quiere introducir de nuevo la facultad
-        int opcion_repetir; // Para recoger el valor del JOptionPane
         int[] num_array_int = new int[10]; // Arreglo para recorrer los int 0-9 y hacerlos char
         char[] numeros_array_char = new char[10]; // Arreglo para recoger los valores del 0-9 en char
         for (int i = 0; i < 10; i++) { // Ciclo para darles los valores a los arreglos
