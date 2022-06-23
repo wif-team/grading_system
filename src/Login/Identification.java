@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Identification {
   private String user_identification;
 
-  public void showIdentification() {
+  public void getIdentificationDocent() {
     String regexIdentification = "^[0-9]{9}[-]?[0-9]{1}$";
     String regexValidation = "^[0-9]{10}$";
     boolean isValidIdentification = false;
@@ -24,5 +24,9 @@ public class Identification {
       }
     } while (!isValidIdentification);
 
+  }
+
+  public String getIdentification() {
+    return user_identification;
   }
 }

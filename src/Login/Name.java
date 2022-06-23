@@ -6,7 +6,7 @@ public class Name {
 
   private String username;
 
-  public void showName() {
+  public void getNameDocent() {
     String regexUsername = "^[A-Z]{1}[a-z]{1,}[\\-\\s][A-Z]{1}[a-z]{1,}$";
     String regexValidName = "^[A-Za-z\\s]{2,}$";
     boolean isValidName = false;
@@ -25,6 +25,10 @@ public class Name {
       }
     } while (!isValidName);
 
+  }
+
+  public String getName() {
+    return username;
   }
 
 }
