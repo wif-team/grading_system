@@ -26,13 +26,28 @@ public class Age {
         }
       }
     } while (valAge(ageValidar) == false);
-    JOptionPane.showMessageDialog(null, "Edad válida");
+    // condicion que me indique si ageValidar tiene comillas al incio y al final
+    if (ageValidar.startsWith("\"") && ageValidar.endsWith("\"")) {
+      // obtener lo que esta entre comillas
+      ageValidar = ageValidar.substring(1, ageValidar.length() - 1);
+    } // condicion si solo empieza con comillas, obtener lo que esta despues de las
+      // comillas
+    else if (ageValidar.startsWith("\"")) {
+      ageValidar = ageValidar.substring(1, ageValidar.length());
+    } // condicion si solo termina con comillas, obtener lo que esta antes de las
+      // comillas
+    else if (ageValidar.endsWith("\"")) {
+      ageValidar = ageValidar.substring(0, ageValidar.length() - 1);
+    }
+    JOptionPane.showMessageDialog(null, "Edad válida" + ageValidar);
   }
 
   // metodo para definir la validez de la edad
   public static boolean valAge(String Age) {
     boolean respuesta = false;
-    if (Age.matches("^[2]{1}[5-9]{1}|[3-5]{1}[0-9]{1}|[6]{1}[0]{1}$")) {
+
+    if (Age.matches(
+        "^[\"]{0,1}[2]{1}[5-9]{1}[\"]{0,1}|[\"]{0,1}[3-5]{1}[0-9]{1}[\"]{0,1}|[\"]{0,1}[6]{1}[0]{1}[\"]{0,1}$")) {
       respuesta = true;
     } else {
       respuesta = false;
