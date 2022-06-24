@@ -31,12 +31,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1654745718" />
+                    <option name="branchName" value="Feature_login" />
+                    <option name="lastUsedInstant" value="1655930524" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1654745717" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1654745718" />
                   </RecentBranch>
                 </list>
               </option>
@@ -67,7 +67,8 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,6 +82,8 @@
       <workItem from="1654745617632" duration="784000" />
       <workItem from="1654911556485" duration="1115000" />
       <workItem from="1654918372392" duration="6000" />
+      <workItem from="1655929865956" duration="125000" />
+      <workItem from="1655930476062" duration="74000" />
     </task>
     <servers />
   </component>
