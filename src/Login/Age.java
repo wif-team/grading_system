@@ -39,7 +39,7 @@ public class Age {
     else if (ageValidar.endsWith("\"")) {
       ageValidar = ageValidar.substring(0, ageValidar.length() - 1);
     }
-    JOptionPane.showMessageDialog(null, "Edad válida" + ageValidar);
+    JOptionPane.showMessageDialog(null, "Edad válida");
   }
 
   // metodo para definir la validez de la edad

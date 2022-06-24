@@ -49,6 +49,7 @@ public class Password {
 
   // Metodo que determina si cumple con los 10 caracteres
   public static boolean valpassword(String user_password) {
+
     return user_password.matches("^.{10}$");
   }
 }
