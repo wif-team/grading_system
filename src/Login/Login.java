@@ -7,10 +7,14 @@ public class Login {
   private String nameUser; // Variables de las credenciales del docente
   private String ageUser;
   private String identificationUser;
+  private String addressUser;
+  private String passwordUser;
 
   Name name = new Name();
   Identification identification = new Identification();
   Age age = new Age();
+  Address address = new Address();
+  Password password = new Password();
 
   public void getCredentials() {
     age.getDocentAge();
@@ -19,9 +23,23 @@ public class Login {
     nameUser = name.getName();
     identification.getIdentificationDocent();
     identificationUser = identification.getIdentification();
+    address.getDocentAddress();
+    addressUser = address.getAddress();
+    password.getDocentPassword();
+    passwordUser = password.getPassword();
   }
 
-  public String getNameUser() { // Metodos para obtener los datos
+  // Metodos para obtener los datos
+
+  public String getAddresUser() {
+    return addressUser;
+  }
+
+  public String getPasswordUser() {
+    return passwordUser;
+  }
+
+  public String getNameUser() {
     return nameUser;
   }
 

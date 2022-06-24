@@ -10,7 +10,7 @@ public class Password {
     return user_password;
   }
 
-  void showPassword() {
+  void getDocentPassword() {
     // Contrasena donde la unica condicion es que tenga mas de 10 caracteres (no
     // puede contener espacios)
     String user_password;
