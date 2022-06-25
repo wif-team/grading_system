@@ -7,7 +7,7 @@ public class Identification {
 
   public void getIdentificationDocent() {
     String regexIdentification = "^[0-9]{9}[-]?[0-9]{1}$";
-    String regexValidation = "^[0-9]{10}$";
+    String regexValidation = "^[0-9]{1,}$";
     boolean isValidIdentification = false;
     do {
       user_identification = JOptionPane.showInputDialog("Ingresa tu numero de identificacion");
