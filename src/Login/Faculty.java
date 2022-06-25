@@ -9,7 +9,7 @@ public class Faculty {
         return faculty;
     }
 
-    void VerifyFaculty() {
+    void getDocentFaculty() {
         String faculty;
         boolean valid; // Boolean que permitira la salida del ciclo do while
         boolean tiene_numeros; // Boolean para ver mas adelante si la palabra introducida tiene numeros
