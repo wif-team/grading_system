@@ -1,4 +1,6 @@
+package Welcome;
 //dieMethod es un método que nos generará un consejo aleatorio de un Array dinámico impreso mediante JOptionPane.showMessageDialog.
+
 //se llamará al método die mediante .die en la creación de un objeto de la clase dieMethod.
 
 import java.util.Random;
