@@ -21,20 +21,20 @@ public class Login {
   Faculty faculty = new Faculty();
 
   public void getCredentials() {
-    age.getDocentAge();
-    ageUser = age.getAge();
     name.getNameDocent();
     nameUser = name.getName();
     identification.getIdentificationDocent();
     identificationUser = identification.getIdentification();
-    address.getDocentAddress();
-    addressUser = address.getAddress();
     password.getDocentPassword();
     passwordUser = password.getPassword();
+    age.getDocentAge();
+    ageUser = age.getAge();
     email.getDocentEmail();
     emailUser = email.getEmail();
     faculty.getDocentFaculty();
     facultyUser = faculty.getFaculty();
+    address.getDocentAddress();
+    addressUser = address.getAddress();
   }
 
   // Metodos para obtener los datos
