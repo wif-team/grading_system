@@ -13,38 +13,51 @@ public class Address {
     String calle;
     String numero;
     String ciudad;
+
+    // JOptionPane.showInputDialog("Ingrese la avenida");
     do {
-      // JOptionPane.showInputDialog("Ingrese la avenida");
       avenida = JOptionPane.showInputDialog("Ingrese la avenida");
       // condicion si avenida coincide con valaddress
       if (valaddress(avenida) == true) {
         validAddress = true;
       } else {
         JOptionPane.showMessageDialog(null, "Avenida invalida");
+        validAddress = false;
       }
+    } while (validAddress == false);
 
+    do {
       // asiganar el valor de la calle a la variable calle
       calle = JOptionPane.showInputDialog("Ingrese la calle");
       if (valaddress(calle) == true) {
         validAddress = true;
       } else {
         JOptionPane.showMessageDialog(null, "Calle invalida");
+        validAddress = false;
       }
+    } while (validAddress == false);
+
+    do {
       // asiganar el valor del numero a la variable numero
       numero = JOptionPane.showInputDialog("Ingrese el numero");
       if (valaddress2(numero) == true) {
         validAddress = true;
       } else {
         JOptionPane.showMessageDialog(null, "Numero de casa invalido");
+        validAddress = false;
       }
+    } while (validAddress == false);
+    do {
       // asiganar el valor de la ciudad a la variable ciudad
       ciudad = JOptionPane.showInputDialog("Ingrese la ciudad");
       if (valaddress(ciudad) == true) {
         validAddress = true;
       } else {
         JOptionPane.showMessageDialog(null, "Ciudad invalida");
+        validAddress = false;
       }
     } while (validAddress == false);
+
     JOptionPane.showMessageDialog(null, "Direccion valida");
     // asignar el valor de la direccion a la variable user_address
     user_address = "Av." + avenida + " y " + calle + " " + numero + " " + ciudad;
