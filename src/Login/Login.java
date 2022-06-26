@@ -29,10 +29,8 @@ public class Login {
     passwordUser = password.getPassword();
     age.getDocentAge();
     ageUser = age.getAge();
-    email.getDocentEmail();
-    emailUser = email.getEmail();
-    faculty.getDocentFaculty();
-    facultyUser = faculty.getFaculty();
+    emailUser = email.getDocentEmail();
+    facultyUser = faculty.getDocentFaculty();
     address.getDocentAddress();
     addressUser = address.getAddress();
   }
@@ -59,11 +57,4 @@ public class Login {
     return ageUser;
   }
 
-  public String getEmailUser() {
-    return emailUser;
-  }
-
-  public String getFacultyUser() {
-    return facultyUser;
-  }
 }
