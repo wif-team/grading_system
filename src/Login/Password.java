@@ -4,13 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Password {
 
-  private String user_password;
-
-  public String getPassword() {
-    return user_password;
-  }
-
-  void getDocentPassword() {
+  public String getDocentPassword() {
     // Contrasena donde la unica condicion es que tenga mas de 10 caracteres (no
     // puede contener espacios)
     String user_password;
@@ -23,6 +17,7 @@ public class Password {
       if (validez == false && user_password.contains(" ")) {
         JOptionPane.showMessageDialog(null, "La contraseña no debe contener espacios y tener 10 o mas caracteres");
       }
+
       if (user_password.isEmpty()) {
         JOptionPane.showMessageDialog(null, "Debes ingresar caracteres");
         continue;
@@ -35,16 +30,18 @@ public class Password {
         JOptionPane.showMessageDialog(null, "La contrasena debe de contener 10 caracteres");
 
       } else {
+
         if (user_password.contains(" ")) {
           JOptionPane.showMessageDialog(null, "La contraseña no debe contener espacios");
           validez = false;
         }
+
       }
 
     } while (validez == false);
 
     JOptionPane.showMessageDialog(null, "Contraseña válida");
-
+    return user_password;
   }
 
   // Metodo que determina si cumple con los 10 caracteres
