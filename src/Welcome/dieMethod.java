@@ -7,13 +7,13 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
-public class dieMethod {
+public class DieMethod {
 
     private ArrayList<String> phrases = new ArrayList<String>();
     private Random random;
     private int index;
 
-    public dieMethod() {
+    public DieMethod() {
         phrases.add("Nunca te rindas");
         phrases.add("Nunca pares de aprender");
         phrases.add("Nunca pares de intentar");
