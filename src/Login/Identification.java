@@ -20,7 +20,7 @@ public class Identification {
         JOptionPane.showMessageDialog(null, "Dato incorrecto, solo se puede ingresar numeros");
       } else {
         JOptionPane.showMessageDialog(null,
-            "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n 9999999-9");
+            "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n 999999999-9");
       }
     } while (!isValidIdentification);
 
