@@ -25,16 +25,11 @@ public class Login {
     nameUser = name.getName();
     identification.getIdentificationDocent();
     identificationUser = identification.getIdentification();
-    password.getDocentPassword();
-    passwordUser = password.getPassword();
-    age.getDocentAge();
-    ageUser = age.getAge();
-    email.getDocentEmail();
-    emailUser = email.getEmail();
-    faculty.getDocentFaculty();
-    facultyUser = faculty.getFaculty();
-    address.getDocentAddress();
-    addressUser = address.getAddress();
+    passwordUser = password.getDocentPassword();
+    ageUser = age.getDocentAge();
+    emailUser = email.getDocentEmail();
+    facultyUser = faculty.getDocentFaculty();
+    addressUser = address.getDocentAddress();
   }
 
   // Metodos para obtener los datos
@@ -66,4 +61,5 @@ public class Login {
   public String getFacultyUser() {
     return facultyUser;
   }
+
 }
