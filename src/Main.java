@@ -1,4 +1,3 @@
-import Welcome.DieMethod;
 import Welcome.WelcomeWindow;
 
 public class Main {
