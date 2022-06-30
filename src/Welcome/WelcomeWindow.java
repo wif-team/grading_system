@@ -6,14 +6,15 @@ import javax.swing.JOptionPane;
 
 import Login.Login;
 
-public class Welcome_Window {
+public class WelcomeWindow {
 
     public void start() {
         Login login = new Login();
+        SpanishDate spanishDate = new SpanishDate();
         login.getCredentials();
         LocalDateTime date = LocalDateTime.now();
-        String day = date.getDayOfWeek().toString();
-        String month = date.getMonth().toString();
+        String day = spanishDate.getSpanishDay(date.getDayOfWeek().toString());
+        String month = spanishDate.getSpanishMonth(date.getMonth().toString());
         String year = date.getYear() + "";
         String hour = date.getHour() + "";
         String minute = date.getMinute() + "";
