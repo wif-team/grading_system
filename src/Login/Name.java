@@ -6,7 +6,7 @@ public class Name {
 
   private String username;
 
-  public void getNameDocent() {
+  public String getNameDocent() {
     String regexUsername = "^[A-Z]{1}[a-z]{1,}[\\-\\s][A-Z]{1}[a-z]{1,}$";
     String regexValidName = "^[A-Za-z\\s]{1,}$";
     boolean isValidName = false;
@@ -24,10 +24,6 @@ public class Name {
             "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n Nombre Apellido");
       }
     } while (!isValidName);
-
-  }
-
-  public String getName() {
     return username;
   }
 

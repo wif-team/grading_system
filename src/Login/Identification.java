@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Identification {
   private String user_identification;
 
-  public void getIdentificationDocent() {
+  public String getIdentificationDocent() {
     String regexIdentification = "^[0-9]{9}[-]?[0-9]{1}$";
     String regexValidation = "^[0-9]{1,}$";
     boolean isValidIdentification = false;
@@ -20,13 +20,10 @@ public class Identification {
         JOptionPane.showMessageDialog(null, "Dato incorrecto, solo se puede ingresar numeros");
       } else {
         JOptionPane.showMessageDialog(null,
-            "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n 9999999-9");
+            "Formato incorrecto, se debe ingresar con\nel siguiente formato: \n 999999999-9");
       }
     } while (!isValidIdentification);
-
-  }
-
-  public String getIdentification() {
     return user_identification;
+
   }
 }

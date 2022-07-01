@@ -1,5 +1,7 @@
 package Login;
 
+import javax.swing.JOptionPane;
+
 // Comentario de prueba
 
 public class Login {
@@ -11,6 +13,7 @@ public class Login {
   private String passwordUser;
   private String emailUser;
   private String facultyUser;
+  int reenterdata = 0;
 
   Name name = new Name();
   Identification identification = new Identification();
@@ -21,15 +24,24 @@ public class Login {
   Faculty faculty = new Faculty();
 
   public void getCredentials() {
-    name.getNameDocent();
-    nameUser = name.getName();
-    identification.getIdentificationDocent();
-    identificationUser = identification.getIdentification();
-    passwordUser = password.getDocentPassword();
-    ageUser = age.getDocentAge();
-    emailUser = email.getDocentEmail();
-    facultyUser = faculty.getDocentFaculty();
-    addressUser = address.getDocentAddress();
+    do {
+      nameUser = name.getNameDocent();
+      identificationUser = identification.getIdentificationDocent();
+      passwordUser = password.getDocentPassword();
+      ageUser = age.getDocentAge();
+      emailUser = email.getDocentEmail();
+      facultyUser = faculty.getDocentFaculty();
+      addressUser = address.getDocentAddress();
+      reenterdata = JOptionPane.showConfirmDialog(null,
+          "¿Sus datos estan correctos?\n Nombre: " + nameUser + "\nIdentificacion: " + identificationUser
+              + "\nContraseña: " + passwordUser
+              + "\nEdad: " + ageUser + "\nEmail: " + emailUser + "\nFacultad: " + facultyUser + "\nDireccion: "
+              + addressUser + " \n¿Desea ingresar nuevamente los datos?",
+          "", JOptionPane.YES_NO_OPTION);
+      if (reenterdata == JOptionPane.YES_NO_OPTION) {
+        reenterdata = 0;
+      }
+    } while (reenterdata == 0);
   }
 
   // Metodos para obtener los datos
