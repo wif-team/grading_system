@@ -1,3 +1,4 @@
+package Welcome;
 
 //se llamará al método die mediante .die en la creación de un objeto de la clase dieMethod.
 
