@@ -23,5 +23,3 @@ Tabla 1:
 15% | Nota 4
 
 15% | Nota 5
-
-# Cambio de prueba para Discord
